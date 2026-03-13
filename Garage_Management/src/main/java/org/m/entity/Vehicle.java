@@ -2,6 +2,7 @@ package org.m.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Date;
 
 @Entity
 @Table(name="vehicles")
@@ -17,6 +18,9 @@ public class Vehicle {
     private String vehicleModel;
 
     private String brand;
+
+    private Date lastServiceDate;
+
 
     @ManyToOne
     @JoinColumn(name="customer_id")

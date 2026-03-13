@@ -2,6 +2,7 @@ package org.m.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Date;
 
 @Entity
 @Table(name="customers")
@@ -19,4 +20,8 @@ public class Customer {
     private String email;
 
     private String address;
+    private Date createdAt;
+    private Date updatedAt;
+
+    private String updatedBy;
 }

@@ -8,6 +8,7 @@ public class GarageManagementApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GarageManagementApplication.class, args);
+		System.out.println("Running Successfully");
 	}
 
 }
